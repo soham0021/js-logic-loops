@@ -10,8 +10,8 @@ var champtype =['mage','figher','suport','tanks','marksman'];
 var info = {
 	kill: 10,
 	death: 2,
-	assaist:5
-	game:info
+	assaist:5,
+	game:champtype
 };
 console.log(info);
 
@@ -19,4 +19,16 @@ console.log(info);
 console.log(info.info);
 
 // access an iteam in a array using its index
-console.log(info.info[0]); // logs 'mage'
+console.log(info.game[0]); // logs 'mage'
+
+// if statements
+// because this test is fals, console.log never runs
+if (5>10) {
+	console.log('You will never see this');
+}
+
+// because this test is true, console.log will run
+
+if (5<=10) {
+	console.log('this is so true');
+}
